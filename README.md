@@ -2,18 +2,8 @@
 
 > 在线预览excel
 
-## start service of developer (开发人员关注)
-
 ``` bash
-## 默认命令 以moli-us配置文件
-npm run dev
-
-## moli 本地执行
-npm run dev --moli-las-test
-npm run dev --moli-in-test
-npm run dev --moli-us-test
-npm run dev --moli-uk-test
-npm run dev --moli-anz-test
+## 将项目部署到excel文件存放的服务器域名下。确保该项目和要预览的excel url在同一个域下。否则无法预览
 
 ## 小翼 本地执行
 npm run dev --xiaoyi-cn-test
