@@ -7,40 +7,16 @@
 ## 需要将此项目部署到和excel文件所在的同一个域下，否则无法实现预览
 ```
 
-## build params of deployer (部署人员关注)
+## 2、正确打开方式
 
 ``` bash
-## docker 通用化打包命令
-npm run build
+## 打开当前项目的同时，使用?作为分隔符，使用data作为参数，值为excel的url地址
 
-## moli BR
+如：
+## 当前项目：scheme://domain/index.html
+## excel文件： scheme://domain/xxx/xxx/abcd.xlsx
 
+正确示例：
+scheme://domain/index.html?data=scheme://domain/xxx/xxx/abcd.xlsx
 
 ```
-
-## Build Setup
-
-``` bash
-# install dependencies
-npm install
-
-# serve with hot reload at localhost:8080
-npm run dev
-
-# build for production with minification
-npm run build
-
-# build for production and view the bundle analyzer report
-npm run build --report
-
-# run unit tests
-npm run unit
-
-# run e2e tests
-npm run e2e
-
-# run all tests
-npm test
-```
-
-For a detailed explanation on how things work, check out the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
